@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="stylingNavBar.css">
+    <link rel="stylesheet" href="aboutusstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                <img src="logo.png" alt="LOGO" style="width: 150px; height: 150px;"> 
+            </a>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="cinemas.html">Cinemas</a></li>
+                <li><a href="promotion.html">Promotions</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+
+            <div class="container-box">
+                <ul>
+                    <li><a href="signup.html" class="join-now-link">Join Now</a></li>
+                    <li><a href="login.html" class="sign-in-link">Sign In</a></li>
+                    <img src="search.png" alt="search" style="width: 32px; height: 32px;" id="searchIcon" onclick="toggleSearchBox()">
+                    <div id="searchBox" style="display: none;">
+                        <form action="movies.html" method="get">
+                            <input type="text" name="query" placeholder="Search for your Favorites">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </ul>
+
+            </div>
+
+            <div class="menu-icon" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+        </nav>
+    </header>
+ 
+    <div class="image-container">
+        <img src="about.png" alt="About Us">
+    </div>
+
+    <section class="about-us-section">
+        <h2>About Us</h2>
+    </section>
+
+    <section class="about-us-section2">
+        <h2>Who are we?</h2>
+        <p>At ReelVista, our commitment goes beyond just showing movies; we aim to provide a complete entertainment experience! Since our establishment in 2023, we've waiting for millions of guests, offering the broadest array of cinematic adventures in Malaysia.
+        <br>Proudly will lead Malaysia's cinema scene, we introduce groundbreaking technologies such as the first-in-market IMAX with Laser Systems and 12-Channel Sound Technology, delivering the most captivating movie-going experiences globally. Our Indulge halls redefine premium movie-going, granting you a taste of the star treatment. 
+           For those seeking relaxation, our halls offer comfort through cozy beanbag pods. And for the little ones, our specially designed Junior halls provide a safe and enjoyable play space.
+        </p>
+    </section>
+        
+    <iframe
+        class="map-iframe"
+        width="600"
+        height="350"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed?shorturl=https://maps.app.goo.gl/hDdhWJog9seUkqPb9">
+    </iframe>
+
+    <div class="location-info">
+        <h3>Our Location</h3>
+        <p>We are located <a href="https://maps.app.goo.gl/hDdhWJog9seUkqPb9" target="_blank">here</a>. Come visit us!</p>
+    </div>
+
+    <div class="find-us-button">
+        <img src="location.png" alt="Find Us Logo" style="width: 32px; height: 32px;">
+        <button type="button" onclick="findUs()">Find Us!</button>
+    </div>
+
+    <div class="content-container">
+        <div class="enquiry-container">
+            <h3 id="confirmationMessage">Send Us Your Enquiry</h3>
+        
+            <form id="submit-enquiry" onsubmit="submitForm(event)">
+                <label for="name"></label>
+                <input type="Name" id="name" name="Name" placeholder="Name" required>
+
+                <label for="email"></label>
+                <input type="Email" id="email" name="Email" placeholder="Email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="confirmationText" style="display: none; color: green;">
+                Your response has been recorded! <br>Please wait for our customer services to reply.
+                Thank You!
+            </div>
+            
+            <div class="contact-info">
+                <img src="contact.png" alt="Contact Service" style="width: 32px; height: 32px;">
+            
+            <div class="contact-details">
+                <p>Customer Service</p>
+                <p><a href="mailto:feedback@reelvista.com.my">feedback@reelvista.com.my</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="aboutusscript.js"></script>
+
+<footer>
+&copy; 2023 ReelVista
+</footer>
+
+</body>
+</html>

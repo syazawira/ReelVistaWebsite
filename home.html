@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="stylingNavBar.css">
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                <img src="logo.png" alt="LOGO" style="width: 150px; height: 150px;"> 
+            </a>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="cinemas.html">Cinemas</a></li>
+                <li><a href="promotion.html">Promotions</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+
+            <div class="container-box">
+                <ul>
+                    <li><a href="signup.html" class="join-now-link">Join Now</a></li>
+                    <li><a href="login.html" class="sign-in-link">Sign In</a></li>
+                    <img src="search.png" alt="search" style="width: 32px; height: 32px;" id="searchIcon" onclick="toggleSearchBox()">
+                    <div id="searchBox" style="display: none;">
+                        <form action="movies.html" method="get">
+                            <input type="text" name="query" placeholder="Search for yourFavorites">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </ul>
+
+            </div>
+
+            <div class="menu-icon" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="caption">1/3</div>
+            <img src="ads1.jpg" style="width:100%">
+            <div class="text">AQUAMAN AND THE LOST KINGDOM</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="caption">2/3</div>
+            <img src="ads2.jpg" style="width:100%">
+            <div class="text">DEAD WHISPERER: TEE YOD</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="caption">3/3</div>
+            <img src="ads3.jpg" style="width:100%">
+            <div class="text">MIGRATION</div>
+        </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align: center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+
+</div>
+
+<h1>Discover Movie</h1>
+
+<h2 class="top-seller-heading">Top Seller Movie</h2>
+
+<div class="topscroll-container">
+  <img src="top1.jpg" alt="Despicable Me 4" width="300" height="400" onclick="bookTicket('Despicable Me 4')">
+  <img src="top2.jpg" alt="BeetleJuice" width="300" height="400" onclick="bookTikcet('BeetleJuice')">
+  <img src="top3.png" alt="Venom 3" width="300" height="400" onclick="bookTikcet('Venom 3')">
+</div>
+
+<h2 class="upcoming-heading">Upcoming Movie</h2>
+
+<div class="upscroll-container">
+  <img src="upcoming.jpg" alt="172 Days" width="300" height="400" onclick="bookTikcet('172 Days')">
+  <img src="upcoming2.jpg" alt="Kungfu Panda 4" width="300" height="400" onclick="bookTicket('Kungfu Panda 4')">
+  <img src="upcoming3.jpg" alt="Godzilla x Kong: The New Empire" width="300" height="400" onclick="bookTicket('Godzilla x Kong: The New Empire')">
+</div>
+
+    <script src="homescript.js"></script>
+    
+    <footer>
+    &copy; 2023 ReelVista
+    </footer>
+
+</body>
+</html>

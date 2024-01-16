@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemas</title>
+    <link rel="stylesheet" href="stylingNavBar.css">
+    <link rel="stylesheet" href="cinemasstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                <img src="logo.png" alt="LOGO" style="width: 150px; height: 150px;"> 
+            </a>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="#cinemas.html">Cinemas</a></li>
+                <li><a href="promotion.html">Promotions</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+
+            <div class="container-box">
+                <ul>
+                    <li><a href="signup.html" class="join-now-link">Join Now</a></li>
+                    <li><a href="login.html" class="sign-in-link">Sign In</a></li>
+                    <img src="search.png" alt="search" style="width: 32px; height: 32px;" id="searchIcon" onclick="toggleSearchBox()">
+                    <div id="searchBox" style="display: none;">
+                        <form action="movies.html" method="get">
+                            <input type="text" name="query" placeholder="Search for your Favorites">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </ul>
+
+            </div>
+
+            <div class="menu-icon" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cinema-section">
+        <div class="cinema-card">
+            <h3>TSV Cinema</h3>
+            <p>Johor Bahru</p>
+            <a href="#">Book Tickets</a>
+        </div>
+
+        <div class="cinema-card">
+            <h3>TSV Cinema</h3>
+            <p>Iskandar Puteri</p>
+            <a href="#">Book Tickets</a>
+        </div>
+
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Batu Pahat</p>
+            <a href="#">Book Tickets</a>
+        </div>
+
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Sungai Petani</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Reel Cinema</h3>
+            <p>Kuala Terengganu</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Puchong</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Damansara</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Kulim</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Batu Pahat</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Jitra</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Reel Cinema</h3>
+            <p>Bukit Bintang</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Setapak</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Reel Cinema</h3>
+            <p>Cheras</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Reel Cinema</h3>
+            <p>Kuala Lumpur City Center</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        <div class="cinema-card">
+            <h3>TSV Cinema</h3>
+            <p>Johor Bahru</p>
+            <a href="#">Book Tickets</a>
+        </div>
+
+        <div class="cinema-card">
+            <h3>TSV Cinema</h3>
+            <p>Iskandar Puteri</p>
+            <a href="#">Book Tickets</a>
+        </div>
+
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Seremban</p>
+            <a href="#">Book Tickets</a>
+        </div>
+
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Sandakan</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Reel Cinema</h3>
+            <p>Pulai</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Kuching</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Kota Kinabalu</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Balik Pulau</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Langkawi</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Kuantan</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Reel Cinema</h3>
+            <p>Bukit Kepong</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Greynish Cinema</h3>
+            <p>Butterworth</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Reel Cinema</h3>
+            <p>Hulu Langat</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Reel Cinema</h3>
+            <p>Putrajaya</p>
+            <a href="#">Book Tickets</a>
+        </div>
+        
+        <div class="cinema-card">
+            <h3>Reel Cinema</h3>
+            <p>Dungun</p>
+            <a href="#">Book Tickets</a>
+        </div>
+
+    </div>
+
+    <script src="cinemasscript.js"></script>
+
+    <footer>
+        &copy; 2023 ReelVista
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
